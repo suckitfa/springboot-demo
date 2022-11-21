@@ -5,9 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @SpringBootApplication
 @RestController
 public class DemoApplication {
@@ -21,13 +18,6 @@ public class DemoApplication {
 		return "Hell World!";
 	}
 
-	@GetMapping("/list")
-	public List<String> hello() {
-		List<String> res = new ArrayList<>();
-		res.add("hello");
-		res.add("world");
-		return res;
-	}
 
 
 }
